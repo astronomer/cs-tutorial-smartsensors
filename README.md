@@ -54,3 +54,5 @@ Be sure to turn both of these DAGs on, as one DAG is checking against a task in 
 ## Additional Resources
 
 * [Apache Airflow - Smart Sensors](https://airflow.apache.org/docs/apache-airflow/stable/concepts/smart-sensors.html)
+* [Astronomer Guides - Sensors](https://www.astronomer.io/guides/what-is-a-sensor)
+* [Marc Lamberti's Sensor Repo](https://github.com/marclamberti/webinar-sensors)
