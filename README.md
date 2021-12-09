@@ -43,12 +43,7 @@ ENV AIRFLOW__SMART_SENSOR__SENSORS_ENABLED=SmartFileSensor,SmartExternalTaskSens
 ```
 
 #### 2. The smart-file-sensor-dag.py DAG:
-To successfully run the `smart-file-sensor-dag` example DAG, create a connection in the airflow UI with the following settings:
-- Connection name: `fs_default`
-- Connection type: `File(path)`
-- In the 'Extra' field, enter: `{"path": "/usr/local/airflow/"}`
-
-Then, turn the DAG on and the SmartFileSensor will check for the file being created by another task in the DAG.
+Turn the DAG on and the SmartFileSensor will check for the file being created by another task in the DAG.
 
 #### 3. The smart-external-task-dag.py and example-dag.py DAGs:
 The `smart-external-task-dag` DAG has a task named `external_task_check` which checks the `task_being_checked` task in the `example-dag` DAG. 

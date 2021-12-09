@@ -37,7 +37,8 @@ with DAG('smart_file_sensor_dag',
         SmartFileSensor(
             task_id=f'waiting_for_file_{sensor_id}',
             filepath='file_to_be_sensed.json',
-            fs_conn_id='fs_default'
+            # Use fs_conn_id if checking an external file
+            # fs_conn_id='fs_default'
         ) for sensor_id in range(1, 4)
     ]
 
