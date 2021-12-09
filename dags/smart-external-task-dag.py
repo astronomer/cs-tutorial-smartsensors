@@ -1,9 +1,8 @@
+from datetime import datetime, timedelta
+
 from airflow import DAG
 from airflow.operators.dummy import DummyOperator
 from plugins.smart_external_task_sensor import SmartExternalTaskSensor
-
-from datetime import datetime, timedelta
-
 
 with DAG('smart_external_task_dag',
          start_date=datetime(2021, 1, 1),

@@ -1,5 +1,7 @@
-from airflow.sensors.filesystem import FileSensor
 from typing import Any
+
+from airflow.sensors.filesystem import FileSensor
+
 
 class SmartFileSensor(FileSensor):
     poke_context_fields = ('filepath', 'fs_conn_id') # <- Required

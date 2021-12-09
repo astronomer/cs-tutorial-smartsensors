@@ -1,8 +1,9 @@
+from datetime import datetime
+
 from airflow import DAG
+from airflow.operators.bash import BashOperator
 from airflow.operators.dummy import DummyOperator
 from plugins.smart_file_sensor import SmartFileSensor
-from airflow.operators.bash import BashOperator
-from datetime import datetime
 
 # For this dag, create a connection in the UI called 'fs_default', File(path) type, and in the 'Extra' field,
 # enter: {"path": "/usr/local/airflow/"}

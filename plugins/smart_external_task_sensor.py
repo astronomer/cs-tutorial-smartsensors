@@ -1,7 +1,7 @@
+from typing import Any
+
 from airflow.sensors.external_task import ExternalTaskSensor
 from airflow.utils.dates import parse_execution_date
-
-from typing import Any
 
 
 class SmartExternalTaskSensor(ExternalTaskSensor):
